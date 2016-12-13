@@ -36,3 +36,10 @@ Function Install-Software
     
     
 }
+
+Function Install-Updates
+{
+
+    Install-Module PSWindowsUpdate
+    Get-WUInstall –MicrosoftUpdate –AcceptAll –AutoReboot
+}
