@@ -1,3 +1,4 @@
+
 Function Install-Chocolaty
 {
     Invoke-WebRequest https://chocolatey.org/install.ps1 -UseBasicParsing | Invoke-Expression
@@ -6,7 +7,8 @@ Function Install-Chocolaty
 
 Function Install-Software
 {
-  choco install visualstudio2015community -iy
+      choco install visualstudio2015community -iy
+      choco install pscx  -iy
     choco install git.install -iy
     choco install 7zip -iy
     choco install notepadplusplus  -iy
