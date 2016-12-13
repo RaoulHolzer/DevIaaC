@@ -5,7 +5,6 @@ Function Install-Chocolaty
 
 
 Function Install-Software
-
 {
   choco install visualstudio2015community -iy
     choco install git.install -iy
